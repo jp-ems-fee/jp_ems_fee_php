@@ -13,4 +13,3 @@ php:
 script:
   - mkdir -p build/logs/
   - phpunit --coverage-clover build/logs/coverage.xml --configuration phpunit.xml.dist
-

@@ -43,7 +43,7 @@ class JpEmsFee
   private static function calculate($weight, $area_name)
   {
     $yaml_parser = new Parser();
-    $yaml = $yaml_parser->parse(file_get_contents('./ems_base_file.yaml'));
+    $yaml = $yaml_parser->parse(file_get_contents('./jp_ems_fee/price_table.yaml'));
     foreach ($yaml[$area_name] as $key => $price) {
       if ($key >= $weight) {
         return $price;
